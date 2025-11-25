@@ -4,7 +4,6 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-
 namespace CleanArcNetBackendBoilerplate.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtensions
