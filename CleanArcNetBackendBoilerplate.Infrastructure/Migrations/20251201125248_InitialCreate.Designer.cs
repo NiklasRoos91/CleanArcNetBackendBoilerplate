@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CleanArcNetBackendBoilerplate.Infrastructure.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251125162111_InitialCreate")]
+    [Migration("20251201125248_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

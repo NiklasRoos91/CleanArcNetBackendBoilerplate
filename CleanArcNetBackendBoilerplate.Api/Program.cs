@@ -1,5 +1,6 @@
-using CleanArcNetBackendBoilerplate.Infrastructure.Extensions;
+using CleanArcNetBackendBoilerplate.Api.Extensions;
 using CleanArcNetBackendBoilerplate.Application.Extensions;
+using CleanArcNetBackendBoilerplate.Infrastructure.Extensions;
 
 namespace CleanArcNetBackendBoilerplate.Api
 {
@@ -12,9 +13,12 @@ namespace CleanArcNetBackendBoilerplate.Api
             // Add services to the container.
 
             builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
+
             builder.Services.AddSwaggerGen();
+            builder.Services.AddJwtAuthentication(builder.Configuration);
+            builder.Services.AddSwaggerWithJwt();
+
             builder.Services.AddInfrastructure(builder.Configuration, useInMemory: false);
             builder.Services.AddApplication();
 

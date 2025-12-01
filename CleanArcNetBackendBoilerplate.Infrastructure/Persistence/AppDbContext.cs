@@ -1,5 +1,4 @@
-﻿using CleanArcNetBackendBoilerplate.Domain.Entities
-;
+﻿using CleanArcNetBackendBoilerplate.Domain.Entities;
 using CleanArcNetBackendBoilerplate.Domain.ValueObjects;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;

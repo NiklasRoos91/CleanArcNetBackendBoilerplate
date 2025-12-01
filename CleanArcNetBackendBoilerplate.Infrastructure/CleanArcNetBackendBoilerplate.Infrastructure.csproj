@@ -17,4 +17,8 @@
     <ProjectReference Include="..\CleanArcNetBackendBoilerplate.Domain\CleanArcNetBackendBoilerplate.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>
